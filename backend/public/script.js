@@ -1,4 +1,4 @@
-const backendURL = 'http://localhost:3001/api/users';
+const backendURL = 'https://popout-production.up.railway.app/api/users';
 
 // form submit
 const form = document.getElementById('userForm');
