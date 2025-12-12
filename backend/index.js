@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static('public'));
 connectDB().catch(err => { console.error(err); process.exit(1); });
 
 app.use('/api/users', require('./routes/users'));
